@@ -1,0 +1,7 @@
+{
+"Esp":[
+ {"uid": 1, "ssid": "module1" ,"password": "pass1"}
+ {"uid": 2, "ssid": "module2" ,"password": "pass2"}
+ {"uid": 3, "ssid": "module3" ,"password": "pass3"}
+]
+}
