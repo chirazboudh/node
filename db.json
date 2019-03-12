@@ -7,5 +7,8 @@
  "User":[
  { "username": "chiraz" ,"password": "pas"},
  { "username": "admin" ,"password": "admin1"}
-  ]
+  ],
+   "profile": {
+    "name": "typicode"
+  }
 }
