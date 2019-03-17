@@ -13,13 +13,15 @@ var db = new sqlite3.Database('./db/projet.db');
 
 // Add restful controller
 require('./wifiController')(app, db, jsonParser);
+require('./userController')(app, db, jsonParser);
+
 
 // Serve static files
 app.use(express.static('wwwroot'))
 
- var server = app.listen(process.env.PORT || 3000, function () {
-
+ var server = app.listen( 3000,'127.0.0.1', function (req,res) {
+var host= server.address().address;
  var port = server.address().port;
-    console.log("App now running on port", port);
+    console.log('App now running at http://',host,':',port,'/');
 
 });
